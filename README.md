@@ -11,35 +11,29 @@ You can click the Preview link to take a look at your changes.
 
 
 
-** 安装zsh并启用autosuggestion
+**一、安装zsh并启用autosuggestion**
 ```shell
 yum install zsh -y; yum install git -y; sh -c "$(curl -fsSL [https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"](https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)")
-```
 
-mac
-```shell
+## macos
+
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 
 
 **二、下载插件到对应的文件夹**
-安装autosuggestion
 ```shell
+##安装autosuggestion
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-```
 
-安装highlight
-```shell
+##安装highlight
 git clone [https://github.com/zsh-users/zsh-syntax-highlighting.git](https://github.com/zsh-users/zsh-syntax-highlighting.git) ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
 **三、启用插件**
 ```shell
 omz plugin enable zsh-autosuggestions
-```
-
-```shell
 omz plugin enable zsh-syntax-highlighting
 ```
 
